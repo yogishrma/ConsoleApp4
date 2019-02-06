@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+		android:src="@android:drawable/ic_menu_gallery"
+		android:layout_width="95dp"
+		android:layout_height="96dp"
+		android:minWidth="25px"
+		
+		android:minHeight="25px"
+		android:id="@+id/imageView1" 
+	     android:layout_marginLeft = "125dp"
+	     android:layout_marginTop = "48dp"/>
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+
+	   
+		android:rowCount = "3"
+		android:columnCount = "2"
+		
+		android:id="@+id/gridLayout1"
+		android:layout_marginTop = "165dp">
+		<TextView
+			android:text="Height(cm)"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#7CFC00"
+			android:layout_marginLeft = "97dp"
+			
+			android:id="@+id/tvheight" />
+		<EditText
+			android:inputType="number"
+			android:id="@+id/etheight" />
+		<TextView
+			android:text="Weight(kg)"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginLeft = "98dp"
+			android:textColor="#7CFC00"
+			android:id="@+id/tvweight" />
+		<EditText
+			android:inputType="number"
+			android:id="@+id/etweight" />
+		<TextView
+			android:text="BMI"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginLeft = "96dp"
+			android:layout_marginTop = "10dp"
+			android:textColor="#7CFC00"
+			android:id="@+id/tvbmi" />
+		<EditText
+			android:inputType="number"
+			android:id="@+id/etbmi" />
+		<Button
+			android:text="Calculate"
+			android:layout_marginLeft = "110dp"
+			android:id="@+id/btcalc" />
+		<Button
+			android:text="Clear"
+			android:layout_marginTop = "55dp"
+			android:layout_marginLeft = "-95dp"
+			android:id="@+id/btclr"
+		 />
+	</GridLayout>
+</android.support.design.widget.CoordinatorLayout>
